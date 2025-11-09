@@ -13,7 +13,17 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Poppins', 'Montserrat', 'sans-serif'],
+      },
       colors: {
+        vernex: {
+          royal: 'hsl(var(--vernex-royal))',
+          gold: 'hsl(var(--vernex-gold))',
+          navy: 'hsl(var(--vernex-navy))',
+          'navy-light': 'hsl(var(--vernex-navy-light))',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
