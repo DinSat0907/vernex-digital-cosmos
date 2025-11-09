@@ -19,12 +19,12 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-accent/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/98 backdrop-blur-xl border-b border-accent/30 shadow-[var(--shadow-medium)]">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Vernex" className="h-12 w-auto" />
+          <Link to="/" className="flex items-center space-x-2 hover:opacity-90 transition-all duration-300 hover:scale-105">
+            <img src={logo} alt="Vernex" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,7 +46,7 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold hover-glow">
+            <Button variant="default" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold hover-glow shadow-[var(--shadow-gold)] px-6">
               Get Started
             </Button>
           </div>
