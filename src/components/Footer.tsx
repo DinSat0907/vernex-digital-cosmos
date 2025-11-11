@@ -44,6 +44,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/saas-ai" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  SaaS & AI
+                </Link>
+              </li>
+              <li>
                 <Link to="/join-network" className="text-primary-foreground/80 hover:text-accent transition-colors">
                   Join Network
                 </Link>

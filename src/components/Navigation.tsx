@@ -12,6 +12,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
+    { name: "SaaS & AI", path: "/saas-ai" },
     { name: "Join Network", path: "/join-network" },
     { name: "Social Connect", path: "/social-connect" },
     { name: "Contact", path: "/contact" },
@@ -20,7 +21,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/98 backdrop-blur-xl border-b border-accent/30 shadow-[var(--shadow-medium)]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-vernex-navy backdrop-blur-xl border-b border-accent/30 shadow-[var(--shadow-medium)]">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}

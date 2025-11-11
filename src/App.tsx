@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
+import SaasAI from "./pages/SaasAI";
 import JoinNetwork from "./pages/JoinNetwork";
 import SocialConnect from "./pages/SocialConnect";
 import Contact from "./pages/Contact";
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:slug" element={<ServiceDetail />} />
+            <Route path="/saas-ai" element={<SaasAI />} />
             <Route path="/join-network" element={<JoinNetwork />} />
             <Route path="/social-connect" element={<SocialConnect />} />
             <Route path="/contact" element={<Contact />} />
