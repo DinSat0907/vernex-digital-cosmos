@@ -86,7 +86,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full"
-                    placeholder="+91 XXX XXX XXXX"
+                    placeholder="+91 XXXXX XXXXX"
                   />
                 </div>
 
@@ -147,10 +147,10 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-foreground mb-2">Email</h3>
                     <a
-                      href="mailto:contact@vernex.com"
+                      href="mailto:vernex.mail@gmail.com"
                       className="text-muted-foreground hover:text-accent transition-colors"
                     >
-                      contact@vernex.com
+                      vernex.mail@gmail.com
                     </a>
                   </div>
                 </div>
@@ -161,7 +161,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-foreground mb-2">Phone / WhatsApp</h3>
-                    <p className="text-muted-foreground">+91 XXX XXX XXXX</p>
+                    <a
+                      href="tel:+919789912805"
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      +91 97899 12805
+                    </a>
                   </div>
                 </div>
 

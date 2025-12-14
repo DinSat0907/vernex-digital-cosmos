@@ -1,4 +1,4 @@
-import { Mail, Phone, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Mail, Phone, Instagram, Facebook, MessageCircle, MessageCircleHeart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -6,36 +6,36 @@ const SocialConnect = () => {
   const socialLinks = [
     {
       name: "Instagram",
-      icon: Instagram,
-      link: "https://instagram.com/vernex",
+      icon: "fa-brands fa-instagram",
+      link: "https://www.instagram.com/vernex.in?igsh=NjN0cnh0eHFtbXps",
       color: "from-purple-600 to-pink-500",
       description: "Follow us for updates and behind-the-scenes content",
     },
     {
       name: "Facebook",
-      icon: Facebook,
+      icon: "fa-brands fa-facebook",
       link: "https://facebook.com/vernex",
       color: "from-blue-600 to-blue-500",
       description: "Join our community and stay connected",
     },
     {
       name: "WhatsApp",
-      icon: MessageCircle,
-      link: "https://wa.me/91XXXXXXXXXX",
+      icon: "fa-brands fa-whatsapp",
+      link: "https://wa.me/919789912805",
       color: "from-green-600 to-green-500",
       description: "Chat with us directly for quick queries",
     },
     {
       name: "Phone Call",
-      icon: Phone,
-      link: "tel:+91XXXXXXXXXX",
+      icon: "fa-solid fa-phone",
+      link: "tel:+919789912805",
       color: "from-blue-500 to-cyan-500",
       description: "Call us for immediate assistance",
     },
     {
       name: "Email",
-      icon: Mail,
-      link: "mailto:contact@vernex.com",
+      icon: "fa-regular fa-envelope",
+      link: "mailto:vernex.mail@gmail.com",
       color: "from-orange-500 to-red-500",
       description: "Send us a detailed message",
     },
@@ -82,7 +82,7 @@ const SocialConnect = () => {
                     <Card className="p-8 h-full bg-card hover:bg-accent/5 transition-all duration-300 hover-lift border-2 border-transparent hover:border-accent/30 cursor-pointer">
                       <div className="flex flex-col items-center text-center space-y-4">
                         <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${social.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                          <Icon size={40} className="text-white" />
+                          <i className={`${Icon} text-white text-[40px]`} title={social.name}></i>
                         </div>
                         <h3 className="text-2xl font-heading font-semibold text-foreground group-hover:text-accent transition-colors">
                           {social.name}
@@ -114,24 +114,24 @@ const SocialConnect = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6">
                   <div className="space-y-2">
                     <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mx-auto mb-3">
-                      <Phone size={24} className="text-accent" />
+                      <i className={`fa-solid fa-phone text-[24px] text-accent`} title={"Phone"}></i>
                     </div>
                     <p className="text-sm text-primary-foreground/70">Phone</p>
-                    <p className="font-semibold">+91 XXX XXX XXXX</p>
+                    <p className="font-semibold">+91 97899 12805</p>
                   </div>
                   <div className="space-y-2">
                     <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mx-auto mb-3">
-                      <Mail size={24} className="text-accent" />
+                      <i className={`fa-regular fa-envelope text-[24px] text-accent`} title={"Email"}></i>
                     </div>
                     <p className="text-sm text-primary-foreground/70">Email</p>
-                    <p className="font-semibold">contact@vernex.com</p>
+                    <p className="font-semibold">vernex.mail@gmail.com</p>
                   </div>
                   <div className="space-y-2">
                     <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mx-auto mb-3">
-                      <MessageCircle size={24} className="text-accent" />
+                      <i className={`fa-brands fa-whatsapp text-[24px] text-accent`} title={"WhatsApp"}></i>
                     </div>
                     <p className="text-sm text-primary-foreground/70">WhatsApp</p>
-                    <p className="font-semibold">+91 XXX XXX XXXX</p>
+                    <p className="font-semibold">+91 97899 12805</p>
                   </div>
                 </div>
               </div>
